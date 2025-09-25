@@ -1,47 +1,79 @@
-body{
-    margin: 0;
-    background-color: rgb(255, 255, 255);
+body {
+    margin: 0; /* odsazování od okraje */
+    background-color: rgb(255, 255, 255); /* barva pozadí */
 }
 
-nav{ /*navigace*/
-    background-color: rgba(0, 0, 0, 0.849);
-    text-align: center; /*centruje text*/
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100px;
-    padding-top: 20px;
+h1 {
+    text-align: left; /* zarovnání textu vlevo */
+    padding-left: 20px; /* odsazování textu od levé strany */
+    font-size: 40px; /* velikost textu */
+    font-weight: bold; /* tučný text */
+}
+p.text {
+    text-align: left; /* zarovnání textu vlevo */
+    padding-left: 20px; /* odsazování textu od levé strany */
+    font-size: 20px; /* velikost textu */
+    width: 65%; /* šířka textu */
+    padding: 20px; /* odsazování textu od okraje */
+}
+.text-box {
+    background-color: rgba(0, 0, 0, 0.849); /* barva pozadí */
+    border: 3px solid #000000; /* barva rámečku */
+    border-radius: 16px; /* zaoblení rohů */
+    padding: 20px; /* odsazení textu od rámečku */
+    width: 65%; /* šířka kontejneru */
+    max-width: 800px; /* maximální šířka */
+    margin-left: 20px; /* odsazení textu od okraje */
 }
 
-nav a{
-    color: white; /*barva textu*/
-    text-decoration: none; /*oddělá podtržení textu*/
-    font-size: 20px; /*velikost textu*/
-    font-weight: bold; /*používá tučný text*/
+.text-box p {
+    font-size: 20px; /* velikost textu */
+    margin-bottom: 15px; /* mezera mezi odstavci */
+    margin-top: 15px; /* mezera mezi odstavci */
+    color: white; /* barva textu */
 }
 
-/*barva po najetí myši na text*/
-nav a:hover{
-    color: rgb(255, 0, 0);
+nav { /* navigace */
+    background-color: rgba(0, 0, 0, 0.849); /* barva pozadí */
+    display: flex; /* Flexbox pro horizontální zarovnání */
+    justify-content: center; /* centrovat menu */
+    align-items: center; /* vertikální centrování textu */
+    width: 100%; /* šířka menu */
+    height: 100px; /* výška menu */
+    padding-top: 20px; /* odsazování textu od vrcholu stránky */
 }
 
-/*oddělá tečky před textem*/
-nav ul{
-    list-style-type: none;
+nav ul {
+    list-style-type: none; /* odstraní tečky */
+    display: flex; /* položky vedle sebe */
+    gap: 30px; /* mezera mezi položkami */
 }
-footer{ /*pádová navigace*/
-    background-color: rgba(0, 0, 0, 0.849);
-    text-align: center; /*centruje text*/
-    display: flex;
-    justify-content: space-around; 
-    width: 100%;
-    height: 50px;
-    position: fixed; 
-    bottom: 0; 
-    color: white; /*barva textu*/
-    font-size: 16px; /*velikost textu*/
-    
-}    
 
+nav a {
+    color: white; /* barva textu */
+    text-decoration: none; /* odstraní podtržení */
+    font-size: 20px; /* velikost textu */
+    font-weight: bold; /* tučný text */
+}
 
-    
+nav a.active {
+    text-decoration: underline; /*podtržení textu aktivní karty*/
+    text-underline-offset: 4px; /*vzdálenost podtržení od textu*/
+}
+
+nav a:hover {
+    color: red; /*barva po najetí myši na text*/
+}
+
+footer { /* pádová navigace */
+    background-color: rgba(0, 0, 0, 0.849); /* barva pozadí */
+    text-align: center; /* zarovnání textu na střed */
+    display: flex; /* flexbox pro horizontální zarovnání */
+    justify-content: space-around; /* rozložení položek mezi sebou */
+    width: 100%; /* šířka menu */
+    height: 50px; /* výška menu */
+    position: fixed; /* pevné umístění menu */
+    bottom: 0; /* umístění menu na spodní straně stránky */
+    color: white; /* barva textu */
+    font-size: 16px; /* velikost textu */
+}
