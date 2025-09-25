@@ -1,6 +1,7 @@
 body {
     margin: 0; /* odsazování od okraje */
     background-color: rgb(255, 255, 255); /* barva pozadí */
+    padding-bottom: 70px; /* rezerva, aby pevný footer nepřekrýval obsah */
 }
 
 h1 {
@@ -76,4 +77,62 @@ footer { /* pádová navigace */
     bottom: 0; /* umístění menu na spodní straně stránky */
     color: white; /* barva textu */
     font-size: 16px; /* velikost textu */
+}
+
+/* ---------------- Responsivní úpravy ---------------- */
+/* Prediktivní výpočty šířek a okrajů */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    /* Navigace se zalomí a zmenší mezery/fonty */
+    nav {
+        height: auto;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    nav a {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 32px;
+        padding-left: 16px;
+    }
+    .text-box {
+        width: 85%;
+        margin: 10px 20px; /* vymezit od okraje */
+    }
+    .text-box p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 12px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 28px;
+        padding-left: 12px;
+    }
+    .text-box {
+        width: 100%;
+        max-width: none;
+        margin: 10px; /* stejné odsazení vlevo/vpravo */
+        padding: 16px;
+        border-width: 2px; /* subtilnější rámeček na mobilu */
+    }
+    .text-box p {
+        font-size: 16px;
+    }
 }
