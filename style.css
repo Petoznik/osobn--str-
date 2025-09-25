@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+nav{ /*navigace*/
+    background-color: rgba(0, 0, 0, 0.849);
+    text-align: center; /*centruje text*/
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+}
+
+nav a{
+    color: white; /*barva textu*/
+    text-decoration: none; /*oddělá podtržení textu*/
+    font-size: 20px; /*velikost textu*/
+    font-weight: bold; /*používá tučný text*/
+}
+
+/*barva po najetí myši na text*/
+nav a:hover{
+    color: rgb(255, 0, 0);
+}
+
+/*oddělá tečky před textem*/
+nav ul{
+    list-style-type: none;
+}
+footer{ /*pádová navigace*/
+    background-color: rgba(0, 0, 0, 0.849);
+    text-align: center; /*centruje text*/
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    height: 50px;
+    position: fixed; 
+    bottom: 0; 
+    color: white; /*barva textu*/
+    font-size: 16px; /*velikost textu*/
+    
+}    
+
+
+    
