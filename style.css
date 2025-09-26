@@ -79,6 +79,17 @@ footer { /* pádová navigace */
     font-size: 16px; /* velikost textu */
 }
 
+img.social {
+    width: 30px; /* šířka obrázku */
+    height: 30px; /* výška obrázku */   
+}
+
+.socials {
+    display: flex; /* položky vedle sebe */
+    justify-content: center; /* centrovat menu */
+    gap: 10px; /* mezera mezi položkami */
+}
+        
 /* ---------------- Responsivní úpravy ---------------- */
 /* Prediktivní výpočty šířek a okrajů */
 *, *::before, *::after {
