@@ -70,7 +70,9 @@ footer { /* pádová navigace */
     background-color: rgba(0, 0, 0, 0.849); /* barva pozadí */
     text-align: center; /* zarovnání textu na střed */
     display: flex; /* flexbox pro horizontální zarovnání */
-    justify-content: space-around; /* rozložení položek mezi sebou */
+    justify-content: center; /* centrovat obsah jako celek */
+    align-items: center; /* vertikální centrování */
+    gap: 14px; /* mezera mezi textem a ikonami */
     width: 100%; /* šířka menu */
     height: 50px; /* výška menu */
     position: fixed; /* pevné umístění menu */
@@ -88,6 +90,13 @@ img.social {
     display: flex; /* položky vedle sebe */
     justify-content: center; /* centrovat menu */
     gap: 10px; /* mezera mezi položkami */
+}
+
+/* Odstranění výchozího odsazení odstavce ve footeru, zarovnání na střed vedle ikon */
+footer p.footer {
+    margin: 0; /* odstraní výchozí odsazení odstavce */
+    display: inline-flex; /* položky vedle sebe */
+    align-items: center; /* vertikální centrování */
 }
         
 /* ---------------- Responsivní úpravy ---------------- */
